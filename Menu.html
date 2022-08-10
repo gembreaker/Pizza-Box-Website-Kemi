@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu | Pizza Box</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Explore the wide range of food options we provide at Pizza Box.">
+	<link rel="icon" href="Images/Logo/profile.png" type="image/x-icon" />
+	<link rel="stylesheet" href="CSS/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/StyleSheet.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<header class="bg-red sticky">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-dark col-12">
+					<a class="navbar-brand" href="HomePage.html"><img src="Images/Pizza-Logo.JPG" alt="Pizza Box" style="height: 70px; width:200px;" /></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="Menu.html">Menu</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="BookTable.html">Book A Table</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="SubmissionForm.html">Sign Up for Offers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="NutritionalInfoAPI.html">Nutritional Info</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="AboutUs.html">About Us</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="content">
+			<section class="jumbotron-menu">
+				<h1 class="jumbotext">MENU</h1>
+			</section>
+
+			<div class="w3-bar w3-black">
+				<div class="wrapper">
+					<button class="w3-bar-item w3-button word" onclick="openFoodOption('Pizzas')">Pizzas</button>
+					<button class="w3-bar-item w3-button word" onclick="openFoodOption('Pasta')">Pasta</button>
+					<button class="w3-bar-item w3-button word" onclick="openFoodOption('Sides')">Sides</button>
+					<button class="w3-bar-item w3-button word" onclick="openFoodOption('Drinks')">Drinks</button>
+				</div>
+			</div>
+
+			<script>
+				var elements = document.querySelectorAll('.word');
+				for (var i = 0, l = elements.length; i < l; i++) {
+
+					var str = elements[i].textContent;
+					elements[i].innerHTML = '';
+
+					for (var j = 0, ll = str.length; j < ll; j++) {
+						var spn = document.createElement('span');
+						elements[i].appendChild(spn);
+						spn.textContent = str[j];
+						let pos = (j % 2) ? 'up' : 'down';
+						spn.classList.add(pos);
+					}
+				}
+			</script>
+
+			<div id="Pizzas" class="w3-container city">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">Margarita Pizza</h2>
+						<p>
+							Cheese, tomato sauce, tomatoes and spinach. 
+							<img src="Images/Margarita-Pizza.jpg" alt="Margarita Pizza" style="width:250px;height:150px; float: right;" />
+						</p><br /><br /><br /><br /><br /><br />
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">
+							Pepperoni Pizza
+						</h2>
+						<p>
+							Cheese, tomato sauce and pepperoni. 
+							<img src="Images/Pepperoni-Pizza.png" alt="Pepperoni Pizza" style="width:250px;height:150px; float: right;" />
+						</p> <br /><br /><br /><br /><br /><br />
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">Hawaiian Pizza </h2>
+						<p>
+							Cheese, tomato sauce, pineapple and ham.
+							<img src="Images/Hawaiian-Pizza.jpg" alt="Hawaiian Pizza" style="width:250px;height:150px; float: right;" />
+						</p><br /><br /><br /><br /><br /><br />
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">Vegetable Pizza</h2>
+						<p>
+							<img src="Images/Vegetable-Pizza.jpg" alt="Vegetable Pizza" style="width:250px;height:150px; float: right;" />	
+							Cheese, tomato sauce, tomatoes, red and yellow peppers, mushrooms, courgettes, aubergines and garlic. 
+						</p><br /><br /><br /><br /><br /><br />
+					</div>
+				</div>
+			</div>
+			<div id="Pasta" class="w3-container city" style="display:none">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">
+							Tomato Pasta
+						</h2>
+						<p>
+							Delicious tomato pasta.
+							<img src="Images/Tomato-Pasta.jpg" alt="Tomato Pasta" style="width:250px;height:150px; float: right;" />
+						</p><br /><br /><br /><br /><br /><br />
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">
+							Spaghetti bolognese
+						</h2>
+						<p>
+							Delicious spag bol.
+							<img src="Images/Spaghetti-Bolognese.jpg" alt="Spaghetti Bolognese" style="width:250px;height:150px; float: right;" />
+						</p><br /><br /><br /><br /><br /><br />
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">
+							Pesto Pasta
+						</h2>
+						<p>
+							Delicious spag bol.
+							<img src="Images/Pesto-Pasta.jpg" alt="Pesto Pasta" style="width:250px;height:150px; float: right;" />
+						</p><br /><br /><br /><br /><br /><br />
+					</div>
+				</div>
+			</div>
+			<div id="Sides" class="w3-container city" style="display:none">
+				<div class="row">
+				<div class="col-12 col-md-6">
+					<h2 class="Menu-Titles">
+						Fries
+					</h2>
+					<p>
+						Potato fries.
+						<img src="Images/Fries.jpg" alt="Potato fries" style="width:250px;height:150px; float: right;" />
+					</p><br /><br /><br /><br /><br /><br />
+				</div>
+				<div class="col-12 col-md-6">
+					<h2 class="Menu-Titles">
+						Sweet Potato Fries
+					</h2>
+					<p>
+						Sweet potato fries.
+						<img src="Images/Sweet-Potato-fries.jpg" alt="Sweet potato fries" style="width:250px;height:150px; float: right;" />
+					</p><br /><br /><br /><br /><br /><br />
+				</div>
+				</div>
+			</div>
+			<div id="Drinks" class="w3-container city" style="display:none">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">Coca Cola</h2>
+						<p>
+							<img src="Images/Coca-Cola.jpg" alt="Coca cola" style="width:200px;height:210px; float: right;" />
+						</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">Lemonade</h2>
+						<p>
+							<img src="Images/lemonade.jpg" alt="Lemonade" style="width:140px;height:210px; float: right;" />
+						</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">Orange Juice</h2>
+						<p>
+							<img src="Images/orange-juice.jpg" alt="Orange Juice" style="width:180px;height:210px; float: right;" />
+						</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class="Menu-Titles">Coffee</h2>
+						<p>
+							<img src="Images/Coffee.jpg" alt="Coffee" style="width:200px;height:210px; float: right;" />
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+	</main>
+	<footer id="main-footer">
+		<br />
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav id="social-media-menu">
+						<a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" class="social-hover" width="62" height="66" title="Facebook" alt="Link to Facebook"></a>
+						<a href="https://www.twitter.com/" target="_blank"><img src="Images/TwitterLogo.png" class="social-hover" width="62" height="66" title="Twitter" alt="Link to Twitter"></a>
+						<a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" class="social-hover" width="62" height="66" title="Instagram" alt="Link to Instagram"></a>
+					</nav>
+					<p>Copyright &copy; 2019</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="JavaScript/bootstrap.min.js"></script>
+	<script src="JavaScript/JavaScript.js"></script>
+</body>
+</html>

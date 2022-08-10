@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Book A Table | Pizza Box</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Book a table at Pizza Box.">
+	<link rel="icon" href="Images/Logo/profile.png" type="image/x-icon" />
+	<link rel="stylesheet" href="CSS/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/StyleSheet.css" />
+</head>
+<body>
+	<header class="bg-red sticky">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-dark col-12">
+					<a class="navbar-brand" href="HomePage.html"><img src="Images/Pizza-Logo.JPG" alt="Pizza Box" style="height: 70px; width:200px;" /></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="Menu.html">Menu</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="BookTable.html">Book A Table</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="SubmissionForm.html">Sign Up for Offers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="NutritionalInfoAPI.html">Nutritional Info</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="AboutUs.html">About Us</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="content">
+			<section class="jumbotron-booktable">
+				<h1 class="jumbotext">BOOK A TABLE</h1>
+			</section>
+
+			<div class="form">
+				<br />
+				<h1 class="text-color">I would like to book a table at: </h1>
+				<form action="BookTable2.html">
+					<fieldset>
+						<p class="text-color">Location:</p>
+						<select name="location">
+							<option value="cardiff">Cardiff</option>
+							<option value="london">London</option>
+							<option value="swansea">Swansea</option>
+							<option value="Manchester">Manchester</option>
+						</select>
+						<br /><br />
+						<p class="text-color">Amount of people:</p>
+						<select name="location">
+							<option value="oneadult">1 Adult</option>
+							<option value="twoadults">2 Adults</option>
+							<option value="threeadults">3 Adults</option>
+							<option value="fouradults">4 Adults</option>
+							<option value="fiveadults">5 Adults</option>
+							<option value="sixadults">6 Adults</option>
+							<option value="sevenadults">7 Adults</option>
+							<option value="eightadults">8 Adults</option>
+							<option value="nineadults">9 Adults</option>
+							<option value="tenadults">10 Adults</option>
+							<option value="elevenadults">11 Adults</option>
+							<option value="twelveadults">12 Adults</option>
+							<option value="thirteenadults">13 Adults</option>
+							<option value="fourteenadults">14 Adults</option>
+						</select>
+						<select name="location">
+							<option value="nochildren">0 Children</option>
+							<option value="onechild">1 Child</option>
+							<option value="twochildren">2 Children</option>
+							<option value="threechildren">3 Children</option>
+							<option value="fourchildren">4 Children</option>
+							<option value="fivechildren">5 Children</option>
+							<option value="sixchildren">6 Children</option>
+							<option value="sevenchildren">7 Children</option>
+							<option value="eightchildren">8 Children</option>
+							<option value="ninechildren">9 Children</option>
+							<option value="tenchildren">10 Children</option>
+							<option value="elevenchildren">11 Children</option>
+							<option value="twelvechildren">12 Children</option>
+							<option value="thirteenchildren">13 Children</option>
+						</select>
+						<br /><br />
+						<p class="text-color">Date and Time:</p>
+						<input type="date" name="dob" id="dob" min="2019-11-11" required />
+						<input type="time" name="usr_time">
+						<br />
+						<br />
+						<input type="submit" value="Submit" class="button">
+					</fieldset>
+					<br />
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer id="main-footer">
+		<br />
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav id="social-media-menu">
+						<a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" class="social-hover" width="62" height="66" title="Facebook" alt="Link to Facebook"></a>
+						<a href="https://www.twitter.com/" target="_blank"><img src="Images/TwitterLogo.png" class="social-hover" width="62" height="66" title="Twitter" alt="Link to Twitter"></a>
+						<a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" class="social-hover" width="62" height="66" title="Instagram" alt="Link to Instagram"></a>
+					</nav>
+					<p>Copyright &copy; 2019</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="JavaScript/bootstrap.min.js"></script>
+</body>
+</html>

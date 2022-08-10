@@ -1,0 +1,436 @@
+﻿body {
+	font-family: 'Hind Vadodara', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#main-footer {
+	text-align: center;
+	background-color: #99ef4d;
+}
+
+.form-submitted-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.social-hover:hover {
+	opacity: 0.8;
+}
+
+.bg-red {
+	background-color: #E51B1B;
+	overflow: hidden;
+}
+
+.menu-options > img {
+	max-width: 100%;
+	height: auto;
+}
+
+.content {
+	margin-top: 90px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.jumbotext {
+	color: white;
+	position: absolute;
+	top: 250px;
+}
+
+/*Home page*/
+
+.jumbotron-fluid {
+	background: url('../Images/Pizza Banner.jpg') no-repeat #000;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-fluid {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-fluid {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-fluid {
+		min-height: 700px;
+		background-image: url('../Images/Pizza Banner.jpg');
+		background-position: center bottom;
+	}
+}
+
+.hide-mobile{
+	display: block;
+}
+
+/*Menu Page*/
+
+.jumbotron-menu {
+	background: url('../Images/Pizza Banner - Menu.jpg');
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-menu {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-menu {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-menu {
+		min-height: 700px;
+		background-image: url('../Images/Pizza Banner - Menu.jpg');
+		background-position: center bottom;
+	}
+}
+
+.wrapper {
+	position: sticky;
+	position: -webkit-sticky;
+	padding: 10px;
+	margin: 20px;
+}
+
+.word {
+	font-size: 40px;
+}
+
+.word .up{
+	display: inline-block;
+	transform: translate3d(0px, 0px, 0px)
+	rotate(0deg);
+	transition: all 0.5s ease-in-out;
+}
+
+.word .down{
+	display: inline-block;
+	transform: translate3d(0px, 0px, 0px)
+	rotate(0deg);
+	transition: all 0.5s ease-in-out;
+}
+
+.word:hover .up {
+	transform: translate3d(0px, -2px, 0px) rotate(12deg);
+	color: #E51B1B
+}
+
+.word:hover .down{
+	transform: translate3d(0px, 2px, 0px)
+	rotate(-12deg);
+	color: #058b05;
+}
+
+.Menu-Titles {
+	margin: 1em 0 0.5em 0;
+	color: #0eaa33;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px red, 0 3px #777;
+}
+
+/*Submission Form*/
+.design {
+	background-color: #ed6a6a;
+	color: #fff;
+	text-shadow: 2px 2px 1px #914141;
+	border-top: 1px solid #e99295;
+	border-bottom: 1px solid #914141;
+}
+
+.form {
+	background-color: #403c3b;
+	margin: 0 auto 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.jumbotron-submissionform {
+	background: url('../Images/Pizza Banner - Submission form.jpg') no-repeat #000;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-submissionform {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-submissionform {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-submissionform {
+		min-height: 700px;
+		background-image: url('../Images/Pizza Banner - Submission form.jpg');
+		background-position: center bottom;
+	}
+}
+
+.text-color{
+	color: white;
+}
+
+/*Book Table*/
+
+.jumbotron-booktable {
+	background: url('../Images/Book Table.jpg') no-repeat #000;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-booktable {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-booktable {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-booktable {
+		min-height: 700px;
+		background-image: url('../Images/Book Table.jpg');
+		background-position: center bottom;
+	}
+}
+
+/*/nutritional info*/
+
+input[name="upc"]:focus,
+input[name="upc"] {
+	background-color: transparent;
+	border: solid;
+	border-width: 0 0 5px 0;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-align: center;
+}
+
+.jumbotron-nutrition {
+	background: url('../Images/nutrition-banner.jpg') no-repeat #000;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-nutrition {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-nutrition {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-nutrition {
+		min-height: 700px;
+		background-image: url('../Images/nutrition-banner.jpg');
+		background-position: center bottom;
+	}
+}
+
+/* UPC Info */
+.UPC-Table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.UPC-active, .collapsible:hover {
+	background-color: #555;
+}
+
+.UPC-Info {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+/*About Us*/
+.jumbotron-about-us {
+	background: url('../Images/About-Us.jpg') no-repeat #000;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 200px) {
+	.jumbotron-about-us {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron-about-us {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.jumbotron-about-us {
+		min-height: 700px;
+		background-image: url('../Images/About-Us.jpg');
+		background-position: center bottom;
+	}
+}
+
+/*Form Submitted*/
+
+.button-back-to-home-page {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 250px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	.button-back-to-home-page {
+		font-size: 12px;
+	}
+}
+
+.button-back-to-home-page span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button-back-to-home-page span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button-back-to-home-page:hover span {
+	padding-right: 25px;
+}
+
+.button-back-to-home-page:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.form-submitted-button {
+	max-height: 100%;
+	width: 100%;
+	padding-top: 170px;
+	background: url('../Images/Pizza.jpg');
+	padding-bottom: 300px;
+	opacity: 0.8;
+}
+
+.back-to-home-button {
+	text-align: center;
+	background: white;
+	margin: auto;
+	width: 50%;
+	border: 3px solid green;
+	padding: 50px;
+}
+
+/* About Us */
+.button {
+	background-color: #e12727; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.book-table-button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
